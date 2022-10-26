@@ -35,4 +35,3 @@ if __name__ == '__main__':
     print(df)
     print(df[notes.keys()])
     df['moyenne_bac'] = calcMean(df)
-    print(df)
