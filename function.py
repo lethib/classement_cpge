@@ -24,14 +24,22 @@ notes = {
 
 def calcMean(row: pd.DataFrame) -> float:
     temp = row[notes.keys()]
-    bot = temp.sum(axis=1)
+    bot = temp.sum()
     top = 0
-    for col in temp:
-        top += temp[col]*notes[col]
-    return float(top/bot)
+    for idx, val in temp.iteritems():
+        top += val*notes[idx]
+    return top/bot
+
+def createMeanCol(df: pd.DataFrame) -> None:
+    res = {}
+    for idx, row in df.iterrows():
+        res[idx] = calcMean(row)
+    df['moyenne_bac'] = pd.Series(res.values(), index=res.keys())
 
 if __name__ == '__main__':
-    df = pd.read_csv('data/fr-esr-parcoursup-2.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields)
+    df = pd.read_csv('data/fr-esr-parcoursup-3.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields).set_index('Etablissement')
+    temp = df[notes.keys()]
+    bot = temp.sum(axis=1)
+    print(temp)
+    createMeanCol(df)
     print(df)
-    print(df[notes.keys()])
-    df['moyenne_bac'] = calcMean(df)
