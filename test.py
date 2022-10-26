@@ -1,11 +1,18 @@
-import json
 import pandas as pd
 
-df = pd.read_csv('fr-esr-parcoursup-2.csv', delimiter=';')
-print(df)
+fields = {
+    'Établissement': 'Etablissement', 
+    'Code départemental de l’établissement' : 'Departement', 
+    'Région de l’établissement' : 'Region', 
+    'Commune de l’établissement' : 'Ville', 
+    'Filière de formation' : 'Filiere',
+    'Dont effectif des admis néo bacheliers sans mention au bac' : 'sans_mention', 
+    'Dont effectif des admis néo bacheliers avec mention Assez Bien au bac' : 'assez_bien', 
+    'Dont effectif des admis néo bacheliers avec mention Bien au bac' : 'bien', 
+    'Dont effectif des admis néo bacheliers avec mention Très Bien au bac' : 'tres_bien', 
+    'Dont effectif des admis néo bacheliers avec mention Très Bien avec félicitations au bac' : 'tres_bien_avec_feli'
+}
 
-json_file = open('fr-esr-parcoursup-2.json')
-json_str = json_file.read()
 
 notes = {
     'sans_mention' : 11,
@@ -15,29 +22,17 @@ notes = {
     'tres_bien_avec_feli' : 19
 }
 
-mention_field = {
-    'sans_mention' : 'acc_sansmention',
-    'assez_bien' : 'acc_ab',
-    'bien' : 'acc_b',
-    'tres_bien' : 'acc_tb',
-    'tres_bien_avec_feli' : 'acc_tbf'
-}
-
-def getNumbers(jsonfile: dict) -> dict:
-    res = {}
-    for key, field in mention_field.items():
-        res[key] = int(jsonfile['fields'][field])
-    return res
-
-def calcMean(nb_list : dict) -> float:
-    bot = sum(nb_list.values())
+def calcMean(row: pd.DataFrame) -> float:
+    temp = row[notes.keys()]
+    bot = temp.sum(axis=1)
     top = 0
-    for mention, nb in nb_list.items():
-        top += nb*notes[mention]
-    return top/bot
+    for col in temp:
+        top += temp[col]*notes[col]
+    return float(top/bot)
 
-etablissement = json.loads(json_str)[0]
-print(etablissement['fields']['acc_tb'])
-print(calcMean(getNumbers(etablissement)))
-
-# PRISE EN MAIN OK - A REFAIRE AVEC PANDAS POUR UN RÉSULTAT PLUS PROPRE
+if __name__ == '__main__':
+    df = pd.read_csv('data/fr-esr-parcoursup-2.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields)
+    print(df)
+    print(df[notes.keys()])
+    df['moyenne_bac'] = calcMean(df)
+    print(df)
