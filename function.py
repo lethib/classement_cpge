@@ -2,6 +2,8 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+### Dictionnaries for data processing ###
+
 fields = {
     'Établissement': 'Etablissement', 
     'Code départemental de l’établissement' : 'Departement', 
@@ -24,6 +26,7 @@ notes = {
     'tres_bien_avec_feli' : 19
 }
 
+# This dictionnary is the output of the getRankEtudiant function. It needed to be processed by hand as the data scrapped were hard to process
 dic_rank_2021 = {
     'Louis Le Grand (75)': '1', 
     'Henri IV (75)': '2', 
@@ -134,13 +137,18 @@ dic_rank_2021 = {
 }
 
 
+### Functions ###
+
+## Functions for the website ##
 def createDicRanking(rank_list: list[str]) -> dict:
+    """Create the dictionnary of the data scrapped on the website."""
     res = {}
     for i in range(3, len(rank_list)-1, 8):
         res[rank_list[i].replace(' ','').replace('-', ' ')] = rank_list[i+1].replace(' ','')
     return res
 
 def getRankEtudiant(url: str) -> dict:
+    """Scrap the website ton get the rank of each schools."""
     browser = webdriver.Safari()
     browser.get(url)
     table = browser.find_elements(By.TAG_NAME, 'td')
@@ -150,6 +158,7 @@ def getRankEtudiant(url: str) -> dict:
     return createDicRanking(table_text)
 
 def processDataDic(ranking_dic: dict) -> dict:
+    """Dictionnary data processing to easily handle the data."""
     res = {}
     for key, val in ranking_dic.items():
         name = key[:-5]
@@ -158,6 +167,7 @@ def processDataDic(ranking_dic: dict) -> dict:
     return res
 
 def createSeriesRankingEtu(processed_dic: dict, df: pd.DataFrame) -> None:
+    """Create the ranking in the DataFrame from the website"""
     res = {}
     for idx, row in df.iterrows():
         res[idx] = None
@@ -166,7 +176,10 @@ def createSeriesRankingEtu(processed_dic: dict, df: pd.DataFrame) -> None:
                 res[idx] = int(key)
     df['classement_etu'] = pd.Series(res.values(), index=res.keys())
 
+
+## Functions to process the data from the database ##
 def calcMean(row: pd.DataFrame) -> float:
+    """Compute the mean at the baccaleureate for a given school."""
     temp = row[notes.keys()]
     bot = temp.sum()
     top = 0
@@ -175,12 +188,14 @@ def calcMean(row: pd.DataFrame) -> float:
     return top/bot
 
 def createMeanCol(df: pd.DataFrame) -> None:
+    """Create the Mean column in the DataFrame."""
     res = {}
     for idx, row in df.iterrows():
         res[idx] = calcMean(row)
     df['moyenne_bac'] = pd.Series(res.values(), index=res.keys())
 
 def createRanking(df: pd.DataFrame) -> None:
+    """Create the ranking of each schools based on their mean."""
     temp = df.sort_values(by='moyenne_bac', ascending=False)
     res = {}
     i = 1
