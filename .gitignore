@@ -8,7 +8,6 @@ __pycache__/
 
 # Other files
 **/.DS_Store
-data/**
 
 # Distribution / packaging
 .Python
