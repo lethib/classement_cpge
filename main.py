@@ -121,11 +121,13 @@ createSeriesRankingEtu(processed_dic, df_pcsi)
 # df_pcsi.to_excel('res/classement_PCSI_2.xlsx')
 
 # # After some correction
-final_df = pd.read_excel('res/classement_PCSI.xlsx').set_index('Etablissement')
+final_df = pd.read_excel('res/classement_PCSI.xlsx')
 # Handle school that doesn't have any ranking on l'etudiant website:
 final_df = final_df.drop(final_df[final_df['classement_etu'] == 0].index)
 createFinalRanking(final_df)
 createPlusValueRanking(final_df)
-final_df_sorted = final_df.sort_values(by='classement_PV').loc[:,col_name_export.keys()].rename(columns=col_name_export)
+final_df_sorted = final_df.sort_values(by='classement_PV').loc[:,col_name_export.keys()].rename(columns=col_name_export).set_index(col_name_export['classement_PV'])
+etablissement = final_df_sorted.pop('Établissement')
+final_df_sorted.insert(0, 'Établissement', etablissement)
 print(final_df_sorted)
 final_df_sorted.to_csv('export/classement_final_PCSI.csv')

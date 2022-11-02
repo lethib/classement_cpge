@@ -29,7 +29,7 @@ notes = {
 
 col_name_export = {
     'Departement' : 'Département',
-    'Region' : 'Région',
+    'Etablissement' : 'Établissement',
     'classement_PV' : 'Classement "Plus-Value" (2021)',
     'moyenne_bac' : 'Moyenne du Lycée au BAC (2019)',
     'classement_bac' : 'Classement Parcoursup (2019)',
@@ -87,7 +87,7 @@ def calcMean(row: pd.DataFrame) -> float:
     top = 0
     for idx, val in temp.iteritems():
         top += val*notes[idx]
-    return top/bot
+    return round(top/bot, 2)
 
 def createMeanCol(df: pd.DataFrame) -> None:
     """Create the Mean column in the DataFrame."""
