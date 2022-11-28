@@ -49,6 +49,10 @@ def createDicRanking(rank_list: list[str]) -> dict:
         res[rank_list[i].replace(' ','').replace('-', ' ')] = rank_list[i+1].replace(' ','')
     return res
 
+def getRankEtudiant2(url: str) -> dict:
+    df = pd.read_html(url)
+    return df
+
 def getRankEtudiant(url: str) -> dict:
     """Scrap the website ton get the rank of each schools."""
     browser = webdriver.Safari()
@@ -120,14 +124,4 @@ def createPlusValueRanking(df: pd.DataFrame) -> None:
     df.insert(2, 'classement_PV', pd.Series(res.values(), index=res.keys()))
 
 if __name__ == '__main__':
-    #print(getRankEtudiant('https://www.letudiant.fr/palmares/classement-prepa/maths-spe-pc/ecole-integree-panier.html'))
-    df = pd.read_csv('data/2021_CPGE_PCSI.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields).set_index('Etablissement')
-    # temp = df[notes.keys()]
-    createMeanCol(df)
-    createRanking(df)
-    #createSeriesRankingEtu(pro_dic, df)
-    print(df.sort_values(by='classement_bac'))
-    # print(df.loc['Lycée Pierre Corneille'])
-    # df.to_excel('classement.xlsx')
-    df2 = pd.read_excel('classement_PCSI.xlsx')
-    print(df2)
+    getRankEtudiant2('https://www.letudiant.fr/palmares/classement-prepa/maths-spe-mp/ecole-integree-panier.html')

@@ -1,7 +1,7 @@
 from function import *
 
 ### PCSI Ranking 
-df_pcsi = pd.read_csv('data/2019_CPGE_PCSI.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields).set_index('Etablissement')
+df_pcsi = pd.read_csv('data/2019_CPGE_MPSI.csv', delimiter=';', usecols=fields.keys()).rename(columns=fields).set_index('Etablissement')
 createMeanCol(df_pcsi)
 createRanking(df_pcsi)
 
