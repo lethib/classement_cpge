@@ -1,103 +1,103 @@
-"Classement ""Plus-Value"" (2021)";Établissement;Département;Moyenne du Lycée au BAC (2019);Classement Parcoursup (2019);Classement L'étudiant (2021);Différence
-1;Lycée Pierre de La Ramee;2;13.18;121;36;85
-2;Lycée Chrestien de Troyes;10;12.74;129;62;67
-3;Lycée Pierre-Gilles de Gennes - ENCPB;75;12.77;128;71;57
-4;Lycée Pierre d'Ailly;60;13.7;110;55;55
-5;Lycée Marceau;28;14.0;101;51;50
-6;Lycée Saliège;31;14.6;76;30;46
-7;Lycée Aristide Briand;27;12.91;127;81;46
-8;LYCEE POLYVALENT GUSTAVE MONOD;95;12.38;134;89;45
-9;Lycée Louis Thuillier;80;14.07;97;56;41
-10;Lycée Honoré De Balzac;75;12.46;132;92;40
-11;Lycée Jacques Decour;75;14.23;88;49;39
-12;Lycée Jean Baptiste Corot;91;14.09;96;57;39
-13;Lycée de L'Emperi;13;12.64;130;92;38
-14;Pôle Kerichen-Vauban;29;14.55;78;45;33
-15;Lycée ASSOMPTION;35;14.17;92;59;33
-16;Lycée St Joseph;84;12.44;133;101;32
-17;Lycée Alphonse DAUDET;30;13.57;114;82;32
-18;Lycée Berthollet;74;14.49;79;48;31
-19;Lycée Franklin Roosevelt;51;14.09;94;63;31
-20;Lycée Robespierre;62;14.17;91;60;31
-22;Lycée Carnot;75;14.63;72;42;30
-23;Lycée Claude Fauriel;42;14.61;73;44;29
-24;Lycée Jean Perrin;69;14.6;75;46;29
-25;Lycée Jean Perrin;13;14.6;75;46;29
-26;Lycée Laperouse;81;13.86;102;76;26
-27;Lycée Théophile Gautier;65;13.08;122;96;26
-29;Lycée Descartes;78;15.06;53;27;26
-30;Lycée François Arago;66;13.65;113;89;24
-31;Lycée Jacques Amyot;89;13.41;118;95;23
-32;Lycée Jacques Amyot;77;13.41;118;95;23
-33;Lycée Michelet;92;15.91;30;8;22
-34;Lycée Chaptal;75;15.64;37;17;20
-35;Lycée Turgot;75;14.09;95;76;19
-36;Lycée Auguste Brizeux;29;13.24;119;101;18
-37;Lycée Edmond Perrier;19;13.83;104;86;18
-38;Lycée Paul Cezanne;13;15.34;43;27;16
-39;Lycée Fabert;57;15.0;55;40;15
-40;Lycée Assomption Bellevue;69;14.0;100;86;14
-41;Lycée Louis Barthou;64;13.71;108;94;14
-42;Lycée Dumont d'Urville;83;13.66;112;100;12
-43;Lycée Montesquieu;72;14.75;64;53;11
-44;Lycée Jeanne D'Albret;78;14.43;83;73;10
-45;Lycée Lavoisier;75;14.35;85;75;10
-46;Lycée Victor Hugo;14;14.84;62;53;9
-47;Lycée Buffon;75;14.95;56;47;9
-48;Lycée Victor Hugo;25;14.84;62;53;9
-49;Lycée Bertran De Born;24;13.7;109;101;8
-50;Lycée Kléber;67;15.93;28;21;7
-51;Lycée Blaise Pascal;91;16.08;25;18;7
-52;Lycée Blaise Pascal;63;16.08;25;18;7
-53;Lycée Fénelon;75;16.11;21;14;7
-54;Lycée Déodat de Séverac;31;15.4;40;33;7
-55;Lycée Marcelin Berthelot;94;15.88;31;26;5
-56;Lycée Charlemagne;75;15.62;38;33;5
-57;Lycée Pierre Corneille;76;15.93;29;24;5
-58;Lycée Fénelon Sainte-Marie;75;16.18;18;14;4
-59;Lycée Henri IV;75;16.75;6;2;4
-60;Lycée général et technologique Aristide Briand;44;14.24;87;83;4
-61;Lycée Champollion;38;16.11;20;16;4
-62;Lycée Henri Poincaré;54;15.85;34;31;3
-63;Lycée Jean Bart;59;14.69;67;64;3
-64;Lycée Lakanal;92;16.35;15;12;3
-65;Lycée Louis Pasteur;92;16.62;10;7;3
-66;Lycée Hoche;78;16.64;8;6;2
-67;Lycée Lalande;1;13.83;103;101;2
-68;Lycée Louis Le Grand;75;16.95;2;1;1
-69;Lycée Pothier;45;14.72;66;66;0
-70;Lycée Stanislas;75;16.83;5;5;0
-71;Lycée Sainte Geneviève;78;16.95;3;3;0
-72;Pôle Chateaubriand - Joliot-Curie;35;16.14;19;20;-1
-73;Lycée Pierre De Fermat;31;16.63;9;11;-2
-74;Lycée Henri Wallon;59;15.71;35;37;-2
-75;Lycée Montaigne;33;16.44;11;13;-2
-76;Lycée Saint-Louis (6ème);75;16.68;7;10;-3
-77;Lycée général Clemenceau;44;16.43;12;15;-3
-78;Lycée Masséna;6;16.35;16;19;-3
-79;Lycée Aux Lazaristes;69;16.96;1;4;-3
-80;Lycée Sainte Marie;59;15.32;45;49;-4
-81;Lycée Sainte Marie;92;15.32;45;49;-4
-82;Lycée du Parc;69;16.93;4;9;-5
-83;Lycée Thiers;13;16.33;17;22;-5
-84;Lycée Camille Jullian;33;15.3;46;52;-6
-85;Lycée René Cassin Bayonne;64;14.58;77;84;-7
-86;Lycée Bellevue;972;15.06;51;58;-7
-87;Lycée Condorcet;75;15.88;32;40;-8
-88;Lycée Janson De Sailly;75;16.4;14;23;-9
-89;Lycée Dupuy De Lôme;56;14.86;60;70;-10
-90;Lycée Albert Schweitzer;93;14.49;81;91;-10
-91;Lycée Albert Schweitzer;68;14.49;81;91;-10
-92;Lycée Joffre;34;16.11;22;33;-11
-93;Lycée général et technologique Henri Bergson;49;14.68;68;80;-12
-94;Lycée La Martiniere Monplaisir;69;15.96;26;38;-12
-96;Lycée François 1er;76;14.64;70;85;-15
-97;Lycée Militaire Prytanee National;72;15.23;48;66;-18
-98;Lycée Faidherbe;59;16.42;13;32;-19
-99;Lycée Jean Dautet;17;14.83;63;82;-19
-100;LGT Saint-Stanislas;44;14.64;69;98;-29
-101;Lycée BELLEVUE;31;16.09;23;58;-35
-102;Lycée Leconte de Lisle;974;14.73;65;101;-36
-103;Lycée Gay-Lussac;87;15.85;33;69;-36
-104;Lycée Albert Chatelet;59;15.24;47;88;-41
-105;Lycée Camille Guérin;86;15.0;54;98;-44
+"Classement ""Plus-Value"" (2021)",Établissement,Département,Moyenne du Lycée au BAC (2019),Classement Parcoursup (2019),Classement L'étudiant (2021),Différence
+1,Lycée Pierre de La Ramee,2,13.18,121,36,85
+2,Lycée Chrestien de Troyes,10,12.74,129,62,67
+3,Lycée Pierre-Gilles de Gennes - ENCPB,75,12.77,128,71,57
+4,Lycée Pierre d'Ailly,60,13.7,110,55,55
+5,Lycée Marceau,28,14.0,101,51,50
+6,Lycée Saliège,31,14.6,76,30,46
+7,Lycée Aristide Briand,27,12.91,127,81,46
+8,LYCEE POLYVALENT GUSTAVE MONOD,95,12.38,134,89,45
+9,Lycée Louis Thuillier,80,14.07,97,56,41
+10,Lycée Honoré De Balzac,75,12.46,132,92,40
+11,Lycée Jacques Decour,75,14.23,88,49,39
+12,Lycée Jean Baptiste Corot,91,14.09,96,57,39
+13,Lycée de L'Emperi,13,12.64,130,92,38
+14,Pôle Kerichen-Vauban,29,14.55,78,45,33
+15,Lycée ASSOMPTION,35,14.17,92,59,33
+16,Lycée St Joseph,84,12.44,133,101,32
+17,Lycée Alphonse DAUDET,30,13.57,114,82,32
+18,Lycée Berthollet,74,14.49,79,48,31
+19,Lycée Franklin Roosevelt,51,14.09,94,63,31
+20,Lycée Robespierre,62,14.17,91,60,31
+22,Lycée Carnot,75,14.63,72,42,30
+23,Lycée Claude Fauriel,42,14.61,73,44,29
+24,Lycée Jean Perrin,69,14.6,75,46,29
+25,Lycée Jean Perrin,13,14.6,75,46,29
+26,Lycée Laperouse,81,13.86,102,76,26
+27,Lycée Théophile Gautier,65,13.08,122,96,26
+29,Lycée Descartes,78,15.06,53,27,26
+30,Lycée François Arago,66,13.65,113,89,24
+31,Lycée Jacques Amyot,89,13.41,118,95,23
+32,Lycée Jacques Amyot,77,13.41,118,95,23
+33,Lycée Michelet,92,15.91,30,8,22
+34,Lycée Chaptal,75,15.64,37,17,20
+35,Lycée Turgot,75,14.09,95,76,19
+36,Lycée Auguste Brizeux,29,13.24,119,101,18
+37,Lycée Edmond Perrier,19,13.83,104,86,18
+38,Lycée Paul Cezanne,13,15.34,43,27,16
+39,Lycée Fabert,57,15.0,55,40,15
+40,Lycée Assomption Bellevue,69,14.0,100,86,14
+41,Lycée Louis Barthou,64,13.71,108,94,14
+42,Lycée Dumont d'Urville,83,13.66,112,100,12
+43,Lycée Montesquieu,72,14.75,64,53,11
+44,Lycée Jeanne D'Albret,78,14.43,83,73,10
+45,Lycée Lavoisier,75,14.35,85,75,10
+46,Lycée Victor Hugo,14,14.84,62,53,9
+47,Lycée Buffon,75,14.95,56,47,9
+48,Lycée Victor Hugo,25,14.84,62,53,9
+49,Lycée Bertran De Born,24,13.7,109,101,8
+50,Lycée Kléber,67,15.93,28,21,7
+51,Lycée Blaise Pascal,91,16.08,25,18,7
+52,Lycée Blaise Pascal,63,16.08,25,18,7
+53,Lycée Fénelon,75,16.11,21,14,7
+54,Lycée Déodat de Séverac,31,15.4,40,33,7
+55,Lycée Marcelin Berthelot,94,15.88,31,26,5
+56,Lycée Charlemagne,75,15.62,38,33,5
+57,Lycée Pierre Corneille,76,15.93,29,24,5
+58,Lycée Fénelon Sainte-Marie,75,16.18,18,14,4
+59,Lycée Henri IV,75,16.75,6,2,4
+60,Lycée général et technologique Aristide Briand,44,14.24,87,83,4
+61,Lycée Champollion,38,16.11,20,16,4
+62,Lycée Henri Poincaré,54,15.85,34,31,3
+63,Lycée Jean Bart,59,14.69,67,64,3
+64,Lycée Lakanal,92,16.35,15,12,3
+65,Lycée Louis Pasteur,92,16.62,10,7,3
+66,Lycée Hoche,78,16.64,8,6,2
+67,Lycée Lalande,1,13.83,103,101,2
+68,Lycée Louis Le Grand,75,16.95,2,1,1
+69,Lycée Pothier,45,14.72,66,66,0
+70,Lycée Stanislas,75,16.83,5,5,0
+71,Lycée Sainte Geneviève,78,16.95,3,3,0
+72,Pôle Chateaubriand - Joliot-Curie,35,16.14,19,20,-1
+73,Lycée Pierre De Fermat,31,16.63,9,11,-2
+74,Lycée Henri Wallon,59,15.71,35,37,-2
+75,Lycée Montaigne,33,16.44,11,13,-2
+76,Lycée Saint-Louis (6ème),75,16.68,7,10,-3
+77,Lycée général Clemenceau,44,16.43,12,15,-3
+78,Lycée Masséna,6,16.35,16,19,-3
+79,Lycée Aux Lazaristes,69,16.96,1,4,-3
+80,Lycée Sainte Marie,59,15.32,45,49,-4
+81,Lycée Sainte Marie,92,15.32,45,49,-4
+82,Lycée du Parc,69,16.93,4,9,-5
+83,Lycée Thiers,13,16.33,17,22,-5
+84,Lycée Camille Jullian,33,15.3,46,52,-6
+85,Lycée René Cassin Bayonne,64,14.58,77,84,-7
+86,Lycée Bellevue,972,15.06,51,58,-7
+87,Lycée Condorcet,75,15.88,32,40,-8
+88,Lycée Janson De Sailly,75,16.4,14,23,-9
+89,Lycée Dupuy De Lôme,56,14.86,60,70,-10
+90,Lycée Albert Schweitzer,93,14.49,81,91,-10
+91,Lycée Albert Schweitzer,68,14.49,81,91,-10
+92,Lycée Joffre,34,16.11,22,33,-11
+93,Lycée général et technologique Henri Bergson,49,14.68,68,80,-12
+94,Lycée La Martiniere Monplaisir,69,15.96,26,38,-12
+96,Lycée François 1er,76,14.64,70,85,-15
+97,Lycée Militaire Prytanee National,72,15.23,48,66,-18
+98,Lycée Faidherbe,59,16.42,13,32,-19
+99,Lycée Jean Dautet,17,14.83,63,82,-19
+100,LGT Saint-Stanislas,44,14.64,69,98,-29
+101,Lycée BELLEVUE,31,16.09,23,58,-35
+102,Lycée Leconte de Lisle,974,14.73,65,101,-36
+103,Lycée Gay-Lussac,87,15.85,33,69,-36
+104,Lycée Albert Chatelet,59,15.24,47,88,-41
+105,Lycée Camille Guérin,86,15.0,54,98,-44
